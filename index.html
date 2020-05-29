@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/rest-data.js"></script>
+    <title>Store Locator</title>
+</head>
+
+<body>
+    <div class="ui">
+        <div id="map"></div>
+
+        <div class="dark-toggle">
+            <div class="background day vis">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="background night">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="toggle">
+            </div>
+            <button class="dark-switch">
+
+            </button>
+        </div>
+
+        <div class="head">
+            STORE LOCATOR
+        </div>
+
+        <div class="search">
+            <div class="cont">
+                <input type="text" placeholder="Enter Name, Location or Keywords" class="w-back" id="inp">
+            </div>
+            <button class="w-back" type="submit" onclick="searchStores()"><i class=" fas fa-search"></i></button>
+        </div>
+
+        <div class="search-cont w-back">
+            <div class="store-list">
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</div>";
+
+</html>
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh15L6ZQVrZVsMjwAhb_3-X6bbgpSGtQk&callback=initMap">
+</script>
+<script src="js/index.js"></script>
