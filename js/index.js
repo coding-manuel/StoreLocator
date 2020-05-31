@@ -491,7 +491,6 @@ function initMap() {
 function searchStores() {
     var inp = document.getElementById("inp").value;
     foundStores = [];
-    console.log("INPUT" + inp);
     if (inp) {
         stores.forEach(function (store) {
             var cus = store['top_ratings'];
@@ -716,7 +715,6 @@ function moreInfo() {
     arrowLeft.addEventListener('click', function () {
         if (current === 0) {
             current = sliderImages.length;
-            console.log("done");
         }
         slideLeft();
     });
@@ -725,7 +723,6 @@ function moreInfo() {
         if (current === sliderImages.length - 1) {
             current = -1;
         }
-        console.log("done");
         slideRight();
     });
 
@@ -736,7 +733,6 @@ function moreInfo() {
 }
 
 function moreInfoClose() {
-    console.log("in");
     moreInfoBox.style.transform = 'translateX(0px)';
     setTimeout(function () {
         moreInfoBox.style.display = 'none';
